@@ -434,3 +434,115 @@ footer {
     width: 0%;
     transition: width 0.1s;
 }
+/* 15. Style the Inspiration Hub */
+.inspiration-hub {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.inspiration-hub h2 {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.inspiration-hub p {
+    color: var(--text);
+    margin-bottom: 3rem;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.profile-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--cream);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+
+.profile-info .niche {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.profile-card .bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.follow-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.profile-card:hover .follow-btn {
+    background-color: var(--secondary);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
