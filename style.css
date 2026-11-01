@@ -278,3 +278,61 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.checklist {
+    background-color: var(--cream);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.checklist label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: var(--primary);
+}
+.quote-carousel {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.quote-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    border-top: 4px solid var(--secondary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.quote-card p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.quote-card span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+.reading-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reading-list li {
+    background-color: var(--cream);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--primary);
+}
