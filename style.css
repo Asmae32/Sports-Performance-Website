@@ -188,3 +188,23 @@ footer {
         border-left: none;
     }
 }
+/* 9. Style the Video Section */
+.video-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 600px; /* Changed from 800px to 600px */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 2px solid var(--cream);
+}
+
+.video-caption {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
