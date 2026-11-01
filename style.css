@@ -208,3 +208,73 @@ footer {
     color: var(--secondary);
     font-size: 0.9rem;
 }
+/* 10. Style the Highlighted Section */
+.highlighted-section {
+    background-color: var(--cream);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary);
+    margin: 3rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.highlighted-section h2 {
+    color: var(--secondary);
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.highlighted-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+/* 11. Style the Photo Gallery */
+.essay-gallery {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.essay-gallery h2 {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 2px solid var(--cream);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    border-color: var(--primary);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile Responsiveness for Gallery */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
