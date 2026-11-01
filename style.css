@@ -336,3 +336,85 @@ footer {
     border-radius: 10px;
     border-left: 3px solid var(--primary);
 }
+/* 13. Style the Playlist Section */
+.essay-playlist {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.essay-playlist h2 {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.essay-playlist p {
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.playlist-tracks {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist-tracks li {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid var(--cream);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.playlist-tracks li:hover {
+    transform: translateX(5px);
+    border-color: var(--primary);
+}
+
+.playlist-tracks i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-info strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+.track-info span {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/* Style the audio player */
+.playlist-tracks audio {
+    height: 35px;
+    width: 200px;
+}
+
+/* Mobile Responsiveness for Playlist */
+@media (max-width: 768px) {
+    .playlist-tracks li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .playlist-tracks audio {
+        width: 100%;
+    }
+}
