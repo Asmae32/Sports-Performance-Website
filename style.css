@@ -59,7 +59,7 @@ body {
 }
 
 .essay-body h2 {
-    color: var(--text2);
+    color: var(--secondary);
     font-family: 'Pacifico', cursive;
     font-size: 2.2rem;
     margin-top: 2.5rem;
