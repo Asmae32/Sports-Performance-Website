@@ -43,21 +43,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 /* 4. Main Essay Container */
 .essay-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem 2rem;
 }
-
 /* 5. Essay Sections */
 .essay-intro, .essay-body {
     font-size: 1.15rem;
     margin-bottom: 2rem;
     line-height: 1.8;
 }
-
 .essay-body h2 {
     color: var(--secondary);
     font-family: 'Pacifico', cursive;
@@ -66,7 +63,6 @@ body {
     border-bottom: 2px solid var(--accent);
     padding-bottom: 0.5rem;
 }
-
 /* Drop Cap for the first letter */
 .drop-cap {
     font-size: 3.5rem;
@@ -76,12 +72,10 @@ body {
     color: var(--primary);
     font-weight: 700;
 }
-
 /* 6. The 3 Athlete Features */
 .athlete-features {
     margin: 3rem 0;
 }
-
 .feature-block {
     display: flex;
     align-items: center;
@@ -94,29 +88,24 @@ body {
     border: 1px solid var(--cream);
     transition: transform 0.3s;
 }
-
 .feature-block:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
 }
-
 /* Alternate the layout for a dynamic look */
 .feature-block:nth-child(even) {
     flex-direction: row-reverse;
 }
-
 .feature-block img {
     width: 45%;
     height: 350px;
     object-fit: cover;
     border-bottom: 4px solid var(--secondary);
 }
-
 .feature-text {
     padding: 2rem;
     flex: 1;
 }
-
 .feature-text h3 {
     color: var(--secondary);
     font-family: 'Pacifico', cursive;
@@ -124,13 +113,11 @@ body {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
 .feature-text p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text);
 }
-
 /* 7. Sidebar / Pull Quote */
 .key-quote {
     background-color: var(--cream);
